@@ -4,7 +4,8 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: './Portfolio-Website',
+  base: '/Portfolio-Website/',
+
   build: {
     rollupOptions: {
       input: {
