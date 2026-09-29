@@ -1,0 +1,52 @@
+/* =========================================================
+   PORTFOLIO THEME
+   ---------------------------------------------------------
+   Change the variables below to recolor the whole website.
+   The button styling is intentionally kept in the same
+   violet / indigo direction as the current portfolio.
+   ========================================================= */
+
+:root,
+:root[data-theme='dark'] {
+  --bg: #070b14;
+  --bg-soft: #0b1020;
+  --surface: #101726;
+  --surface-2: #141d30;
+  --surface-3: #1b2540;
+  --text: #f6f7fb;
+  --muted: #99a3b6;
+  --faint: #657087;
+  --border: rgba(255,255,255,.09);
+  --border-strong: rgba(255,255,255,.16);
+  --accent: #7c6cff;
+  --accent-2: #2ed3c6;
+  --accent-soft: rgba(124,108,255,.14);
+  --accent-glow: rgba(124,108,255,.22);
+  --success: #52d99a;
+  --shadow: 0 22px 70px rgba(0,0,0,.34);
+  --button-text: #ffffff;
+  --button-bg: linear-gradient(135deg,#7c6cff,#6655ee);
+  --button-hover: linear-gradient(135deg,#887aff,#705fff);
+}
+
+:root[data-theme='light'] {
+  --bg: #f7f8fc;
+  --bg-soft: #eef1f7;
+  --surface: #ffffff;
+  --surface-2: #f5f7fb;
+  --surface-3: #e9edf5;
+  --text: #111827;
+  --muted: #596579;
+  --faint: #8792a7;
+  --border: rgba(15,23,42,.09);
+  --border-strong: rgba(15,23,42,.15);
+  --accent: #6e5ef7;
+  --accent-2: #0fa99f;
+  --accent-soft: rgba(110,94,247,.10);
+  --accent-glow: rgba(110,94,247,.16);
+  --success: #169b68;
+  --shadow: 0 22px 70px rgba(15,23,42,.12);
+  --button-text: #ffffff;
+  --button-bg: linear-gradient(135deg,#7c6cff,#6655ee);
+  --button-hover: linear-gradient(135deg,#887aff,#705fff);
+}
