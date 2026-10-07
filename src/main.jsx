@@ -38,11 +38,9 @@ const experience = [
 const certificates = [
   {name:'GitHub Copilot Certification', issuer:'GitHub', badge:'GH-300', href:null},
   {name:'Claude Certified Associate - Foundations', issuer:'Anthropic', badge:'CLAUDE', href:null},
+  {name:'Microsoft Azure AI Fundamentals', issuer:'Microsoft', badge:'AI-901', href:null},
   {name:'Data Structures', issuer:'IIT Kanpur', badge:'DSA', href:'./assets/certificates/dsa.pdf'},
   {name:'Core Java', issuer:'IIT Kanpur', badge:'JAVA', href:'./assets/certificates/core java.pdf'},
-  {name:'Frontend Web Development', issuer:'Udemy', badge:'WEB', href:'./assets/certificates/frontend Vikas.pdf'},
-  {name:'SQL using MySQL', issuer:'Udemy', badge:'SQL', href:'./assets/certificates/SQL.pdf'},
-  {name:'Web Development Scholar Intern', issuer:'Two Waits', badge:'INTERN', href:'./assets/certificates/TwoWaits.pdf'}
 ]
 
 function useTheme(){
