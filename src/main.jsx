@@ -110,17 +110,36 @@ const skills = [
    PROJECTS
    ========================================================= */
 
+
 const projects = [
+
+  {
+    title: 'SpendScope — Expense Intelligence',
+    kind: 'Full Stack',
+    text:
+      'Secure multi-user expense management platform with JWT authentication, analytics, monthly budgets, category insights, CSV import/export and strict user-level data isolation.',
+    stack: [
+      'React',
+      'FastAPI',
+      'PostgreSQL',
+      'SQLAlchemy',
+      'Docker'
+    ],
+    github:
+      'https://github.com/vikas-11/SpendScope',
+    featured: true
+  },
+
   {
     title: 'Pulse — Social Platform',
     kind: 'Full Stack',
     text:
-      'Modern social platform with authentication, CRUD posts, image uploads, likes, comments, bookmarks, profiles, search and staff moderation.',
+      'Modern Django social platform with authentication, posts, image uploads, likes, comments, bookmarks, profiles, search, dark mode and a custom staff moderation center.',
     stack: [
       'Python',
       'Django',
       'JavaScript',
-      'CSS'
+      'SQLite'
     ],
     github:
       'https://github.com/vikas-11/Pulse-Social-App',
@@ -131,23 +150,58 @@ const projects = [
     title: 'Task Management API',
     kind: 'Backend',
     text:
-      'Backend application built around CRUD flows, authentication, relational data, PostgreSQL and containerized deployment.',
+      'Production-style REST API for users and tasks with JWT authentication, protected routes, task CRUD, PostgreSQL persistence, validation and database migrations.',
     stack: [
       'FastAPI',
       'PostgreSQL',
       'SQLAlchemy',
-      'Docker'
+      'JWT',
+      'Alembic'
     ],
     github:
-      'https://github.com/vikas-11',
+      'https://github.com/vikas-11/fastapi-task-management-api',
     featured: true
+  },
+
+  {
+    title: 'Insurance Premium Prediction API',
+    kind: 'Machine Learning',
+    text:
+      'Machine-learning prediction service that exposes a trained insurance premium model through a modular FastAPI REST API with feature engineering, Pydantic validation and Swagger documentation.',
+    stack: [
+      'Python',
+      'FastAPI',
+      'Scikit-learn',
+      'Pydantic',
+      'Machine Learning'
+    ],
+    github:
+      'https://github.com/vikas-11/Insurance-Premium-Prediction',
+    featured: true
+  },
+
+  {
+    title: 'lunchBOX — Delivery Manager',
+    kind: 'Backend',
+    text:
+      'FastAPI-powered tiffin delivery management system with order CRUD, delivery status workflows, search and filtering, status history, daily statistics and an operations dashboard.',
+    stack: [
+      'FastAPI',
+      'SQLModel',
+      'SQLite',
+      'REST API',
+      'JavaScript'
+    ],
+    github:
+      'https://github.com/vikas-11/lunchBOX-FastAPI',
+    featured: false
   },
 
   {
     title: 'AI Claims Comparison',
     kind: 'Automation',
     text:
-      'Enterprise automation work using Python extraction, JSON processing, comparison rules and prompt-driven validation workflows.',
+      'Enterprise automation solution using Python, structured data extraction, JSON processing and GenAI prompt workflows to automate healthcare document comparison and validation.',
     stack: [
       'Python',
       'GenAI',
@@ -156,48 +210,8 @@ const projects = [
     ],
     github: null,
     featured: true
-  },
-
-  {
-    title: 'Carwash Web Experience',
-    kind: 'Frontend',
-    text:
-      'Responsive React interface with reusable components, API integration, routing and polished Material UI patterns.',
-    stack: [
-      'React.js',
-      'REST API',
-      'Material UI'
-    ],
-    github:
-      'https://github.com/vikas-11'
-  },
-
-  {
-    title: 'ATM Simulator System',
-    kind: 'Desktop',
-    text:
-      'Desktop banking simulation implementing transactional workflows and persistent data using Java Swing and JDBC.',
-    stack: [
-      'Java',
-      'Swing',
-      'JDBC',
-      'MySQL'
-    ],
-    github: null
-  },
-
-  {
-    title: 'Hotel Management System',
-    kind: 'Desktop',
-    text:
-      'Management application for hotel operations, booking records and database-backed workflows.',
-    stack: [
-      'Java',
-      'Swing',
-      'MySQL'
-    ],
-    github: null
   }
+
 ]
 
 
@@ -936,7 +950,7 @@ function Home() {
           </div>
 
 
-          {/* RIGHT SIDE — NO PROFILE IMAGE */}
+          {/* RIGHT SIDE — PROFILE IMAGE */}
 
           <div
             className="visual-wrap"
@@ -945,220 +959,42 @@ function Home() {
 
             <div className="visual-grid" />
 
-
             <div className="hero-photo-card tilt-card">
 
-
-              {/* Window Header */}
-
               <div className="code-strip">
-
-                <span>
-                  backend_profile.py
-                </span>
-
+                <span>portfolio.tsx</span>
                 <i />
                 <i />
                 <i />
-
               </div>
 
-
-              {/* Terminal */}
-
-              <div className="developer-terminal">
-
-
-                <div className="terminal-title">
-
-                  <span>
-                    ~/vikas/backend
-                  </span>
-
-                  <b>
-
-                    <i />
-
-                    ONLINE
-
-                  </b>
-
-                </div>
-
-
-                <div className="terminal-command">
-
-                  <span>
-                    $
-                  </span>
-
-                  python profile.py
-
-                </div>
-
-
-                <div className="terminal-output">
-
-                  <p>
-
-                    <span>
-                      developer
-                    </span>
-
-                    <b>
-                      "Vikas Yadav"
-                    </b>
-
-                  </p>
-
-
-                  <p>
-
-                    <span>
-                      role
-                    </span>
-
-                    <b>
-                      "Backend Developer"
-                    </b>
-
-                  </p>
-
-
-                  <p>
-
-                    <span>
-                      language
-                    </span>
-
-                    <b>
-                      "Python"
-                    </b>
-
-                  </p>
-
-
-                  <p>
-
-                    <span>
-                      frameworks
-                    </span>
-
-                    <b>
-                      ["FastAPI", "Django"]
-                    </b>
-
-                  </p>
-
-
-                  <p>
-
-                    <span>
-                      database
-                    </span>
-
-                    <b>
-                      "PostgreSQL"
-                    </b>
-
-                  </p>
-
-
-                  <p>
-
-                    <span>
-                      devops
-                    </span>
-
-                    <b>
-                      "Docker"
-                    </b>
-
-                  </p>
-
-
-                  <p>
-
-                    <span>
-                      focus
-                    </span>
-
-                    <b>
-                      "APIs + GenAI"
-                    </b>
-
-                  </p>
-
-                </div>
-
-
-                <div className="terminal-ready">
-
-                  <i />
-
-                  ready_to_build = True
-
-                </div>
-
+              <div className="photo-frame">
+                <img
+                  src="./assets/img/profile-hero.png"
+                  alt="Vikas Yadav"
+                />
               </div>
-
 
               <div className="photo-meta">
-
-                <span>
-                  VIKAS_YADAV
-                </span>
-
-                <b>
-                  Backend Developer
-                </b>
-
+                <span>VIKAS_YADAV</span>
+                <b>Backend Developer</b>
               </div>
 
             </div>
 
-
-            {/* Floating Skills */}
-
             <div className="float-chip chip-a">
-
-              <Icon
-                name="server"
-                size={18}
-              />
-
-              <span>
-                FastAPI
-              </span>
-
+              <Icon name="server" size={18} />
+              <span>FastAPI</span>
             </div>
-
 
             <div className="float-chip chip-b">
-
-              <Icon
-                name="database"
-                size={18}
-              />
-
-              <span>
-                PostgreSQL
-              </span>
-
+              <Icon name="database" size={18} />
+              <span>PostgreSQL</span>
             </div>
 
-
             <div className="float-chip chip-c">
-
-              <Icon
-                name="spark"
-                size={18}
-              />
-
-              <span>
-                GenAI
-              </span>
-
+              <Icon name="spark" size={18} />
+              <span>GenAI</span>
             </div>
 
           </div>
@@ -1807,30 +1643,30 @@ function Experience() {
 
 function Projects() {
 
-  const [
-    filter,
-    setFilter
-  ] = useState('All')
+  // const [
+  //   filter,
+  //   setFilter
+  // ] = useState('All')
 
 
-  const kinds = [
-    'All',
-    ...new Set(
-      projects.map(
-        project =>
-          project.kind
-      )
-    )
-  ]
+  // const kinds = [
+  //   'All',
+  //   ...new Set(
+  //     projects.map(
+  //       project =>
+  //         project.kind
+  //     )
+  //   )
+  // ]
 
 
-  const visible =
-    filter === 'All'
-      ? projects
-      : projects.filter(
-          project =>
-            project.kind === filter
-        )
+  // const visible =
+  //   filter === 'All'
+  //     ? projects
+  //     : projects.filter(
+  //         project =>
+  //           project.kind === filter
+  //       )
 
 
   return (
@@ -1841,7 +1677,7 @@ function Projects() {
         eyebrow="Selected work"
         title="Projects that show how I"
         accent="build."
-        copy="A mix of backend systems, automation, full-stack products and earlier application work."
+        copy="A collection of full-stack applications, backend APIs, automation systems and machine-learning projects built with modern engineering tools."
         icon="code"
       />
 
@@ -1853,7 +1689,7 @@ function Projects() {
 
           {/* FILTER */}
 
-          <div className="filter-row">
+          {/* <div className="filter-row">
 
             {kinds.map(
               kind => (
@@ -1877,14 +1713,14 @@ function Projects() {
               )
             )}
 
-          </div>
+          </div> */}
 
 
           {/* PROJECT CARDS */}
 
           <div className="project-grid">
 
-            {visible.map(
+            {projects.map(
               (
                 project,
                 index
